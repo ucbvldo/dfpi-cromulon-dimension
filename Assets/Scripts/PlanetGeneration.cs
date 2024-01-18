@@ -30,6 +30,13 @@ public class PlanetGeneration : MonoBehaviour
     void Start()
     {
         planets = new List<Planet>();
+        
+        foreach (Transform child in transform)
+        {
+            var planet = child.GetComponent<Planet>();
+            if (planet != null)
+                planets.Add(planet);
+        }
     }
 
     // Update is called once per frame
