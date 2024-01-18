@@ -6,7 +6,7 @@
  ## Requirements
  | Software | Version |
  |----------|---------|
- |Unity|[**2023.2.x**](unityhub://2023.2.5f1/381b4941466e)|
+ |Unity|[**2023.2.x**](https://unity.com/releases/editor/archive)|
  |Rider|[**2023.x**](https://www.jetbrains.com/rider/download/)|
 
  
