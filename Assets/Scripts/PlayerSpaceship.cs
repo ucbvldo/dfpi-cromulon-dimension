@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class PlayerSpaceship : MonoBehaviour
 {
-
-    Rigidbody spaceshipRB;
-
-    // Inputs
-    float verticalMove;
-    float horizontalMove;
-    float mouseInputX;
-    float mouseInputY;
-    float rollInput;
-
     // Speed Multipliers
     [SerializeField] float speedMult = 1f;
     [SerializeField] float speedMultAngle = 0.5f;
     [SerializeField] float speedRollMultAngle = 0.05f;
 
+    private Rigidbody spaceshipRB;
+
+    // Inputs
+    private float verticalMove;
+    private float horizontalMove;
+    private float mouseInputX;
+    private float mouseInputY;
+    private float rollInput;
 
     // Start is called before the first frame update
     void Start()
