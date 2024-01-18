@@ -8,6 +8,7 @@ public class Planet : MonoBehaviour
     [Range(0,100)]
     public float density;
 
+    public Vector3 initialVelocity;
     
     public Rigidbody rb;
     
@@ -31,6 +32,7 @@ public class Planet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.velocity = initialVelocity;
     }
 
     // Update is called once per frame
