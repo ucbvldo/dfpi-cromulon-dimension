@@ -191,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 8814808002963414767, guid: c13d656a2bb2d4bf1a1d7acd8afb677f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -319,7 +319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &330585544
 AudioListener:
   m_ObjectHideFlags: 0
@@ -842,10 +842,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2422140584775650167, guid: 2415290d5b3554d2598196e1a5034226, type: 3}
   bounds: {fileID: 1342045966}
-  minRadius: 3
-  maxRadius: 53.1
-  minDensity: 1
-  maxDensity: 25.9
+  minRadius: 73.7
+  maxRadius: 100
+  minDensity: 56.6
+  maxDensity: 75.1
   planets: []
 --- !u!4 &1342045965
 Transform:

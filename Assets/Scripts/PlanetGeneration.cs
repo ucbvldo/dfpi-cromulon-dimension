@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 public class PlanetGeneration : MonoBehaviour
@@ -25,6 +26,8 @@ public class PlanetGeneration : MonoBehaviour
     public float maxDensity;
 
     public List<Planet> planets;
+
+    public UnityEvent<List<Planet>> OnPlanetAdded;
     
     // Start is called before the first frame update
     void Start()
@@ -68,6 +71,7 @@ public class PlanetGeneration : MonoBehaviour
         planet.density = d;
         
         planets.Add(planet);
-
+        
+        OnPlanetAdded.Invoke(planets);
     }
 }
